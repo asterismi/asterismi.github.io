@@ -135,6 +135,9 @@ a:visited {
 .tag {
     padding-bottom: 12px;
 }
+.project-text {
+    overflow: scroll;
+}
 .project-text p {
     line-height: 30px;
     padding-bottom: 12px;
