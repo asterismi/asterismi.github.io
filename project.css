@@ -136,7 +136,8 @@ a:visited {
     padding-bottom: 12px;
 }
 .project-text {
-    overflow: scroll;
+    overflow: auto;
+    height: 100vh;
 }
 .project-text p {
     line-height: 30px;
@@ -145,6 +146,12 @@ a:visited {
 .info.link {
     display: flex;
     flex-direction: column;
+}
+.main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar {
+    display: none;
+}
+.main-text, .main-gallery {
+    scrollbar-width: none;
 }
 
 /* MEDIA QUERIES */
@@ -157,30 +164,24 @@ a:visited {
         background-size: 60px 60px;
     }
     .main-content {
-        overflow: scroll;
+        overflow: hidden;
         grid-template-areas: 'gallery gallery gallery gallery gallery gallery gallery gallery' 'text text text text text text text text';
         padding-top: 72px;
     }
     .main-text {
         height: 75vh;
-        overflow: scroll;
+        overflow: auto;
         padding: 12px;
     }
     .main-gallery {
-        overflow: scroll;
+        overflow: auto;
         height: auto;
         display: flex;
         flex-direction: row;
         padding: 0;
     }
-    .main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar {
-        display: none;
-    }
-    .main-text, .main-gallery {
-        scrollbar-width: none;
-    }
     .gallery {
-        overflow: scroll;
+        overflow: auto;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -192,6 +193,9 @@ a:visited {
     }
     .marker {
         font-size: 12px;
+    }
+    .project-text {
+        overflow: auto;
     }
     .project-text p {
         line-height: 24px;
