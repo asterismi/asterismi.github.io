@@ -162,7 +162,7 @@ document.documentElement.addEventListener("wheel", (e) => {
     galleryHeight = document.querySelector(".gallery").clientHeight;
     maxGalleryScroll = galleryHeight - window.innerHeight;
 
-    galleryScroll += 2 * e.deltaY;
+    galleryScroll += e.deltaY;
     galleryScroll = Math.max (0, galleryScroll);
     galleryScroll = Math.min (maxGalleryScroll, galleryScroll);
 
