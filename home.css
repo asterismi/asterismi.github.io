@@ -2,7 +2,10 @@
 
 @font-face {
     font-family: "Chaumont Script";
-    src: local("Chaumont Script") url("ChaumontScript-Regular.woff2") format("woff2")
+    src: local("Chaumont Script"),
+        url("ChaumontScript-Regular.woff2") format("woff2"),
+        url("ChaumontScript-Regular.woff") format("woff"),
+        url("ChaumontScript-Regular.ttf") format("truetype");
 }
 :root {
     --color: #243853;
