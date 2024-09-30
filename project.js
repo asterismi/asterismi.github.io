@@ -170,7 +170,7 @@ document.documentElement.addEventListener("wheel", (e) => {
         document.querySelector(".gallery-container").scrollTop = galleryScroll;
     };
     
-    console.log(galleryHeight + " " + `${document.querySelector(".gallery").clientHeight}` + " " + galleryScroll);
+    // console.log(galleryHeight + " " + `${document.querySelector(".gallery").clientHeight}` + " " + galleryScroll);
 });
 
 window.addEventListener("resize", () => {
