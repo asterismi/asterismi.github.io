@@ -1,0 +1,197 @@
+/* GENERAL */
+
+@font-face {
+    font-family: "Chaumont Script";
+    src: local("Chaumont Script") url("ChaumontScript-Regular.woff2") format("woff2")
+}
+:root {
+    --color: #fff;
+    --bg-color: #243853;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: crosshair;
+}
+body {
+    overflow: hidden;
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    color: var(--color);
+}
+a {
+    color: var(--color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: var(--color);
+    text-decoration: none;
+}
+
+/* BACKGROUND */
+
+.grid {
+    width: 100vw;
+    height: 100vh;
+    background-image:
+      repeating-linear-gradient(var(--color) 0 1px, transparent 1px 100%),
+      repeating-linear-gradient(90deg, var(--color) 0 1px, transparent 1px 100%);
+    background-size: 120px 120px;
+    opacity: 0.3;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* MENU */
+
+.menu-bar {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 24px;
+    color: var(--color);
+    fill: var(--color);
+    transition: 0.2s ease;
+    user-select: none;
+}
+.menu-bar svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color);
+    transition: 0.2s ease;
+}
+.menu-bar svg:hover {
+    transform: rotate(60deg);
+}
+.menu-left {
+    display: flex;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: 'text text text gallery gallery gallery gallery gallery';
+}
+.main-text {
+    grid-area: text;
+    padding: 120px 12px 48px 48px;
+}
+.main-gallery {
+    grid-area: gallery;
+    padding: 0 48px 0 12px;
+    display: flex;
+    height: 100vh;
+}
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.gallery img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    padding: 6px 0;
+    margin: 6px;
+}
+.project-info {
+    padding-bottom: 36px;
+}
+.marker {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    padding-bottom: 4px;
+}
+.tag {
+    padding-bottom: 12px;
+}
+.project-text p {
+    line-height: 30px;
+    padding-bottom: 12px;
+}
+.info.link {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px){
+    :root {
+        font-size: 18px;
+    }
+    .grid {
+        background-size: 60px 60px;
+    }
+    .main-content {
+        overflow: hidden;
+        grid-template-areas: 'gallery gallery gallery gallery gallery gallery gallery gallery' 'text text text text text text text text';
+        padding-top: 72px;
+    }
+    .main-text {
+        height: 75vh;
+        overflow: scroll;
+        padding: 12px;
+    }
+    .main-gallery {
+        overflow: scroll;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    .main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar {
+        display: none;
+    }
+    .main-text, .main-gallery {
+        scrollbar-width: none;
+    }
+    .gallery {
+        overflow: scroll;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .gallery img {
+        height: 25vh;
+        width: auto;
+    }
+    .marker {
+        font-size: 12px;
+    }
+    .project-text p {
+        line-height: 24px;
+        padding-bottom: 6px;
+    }
+}
