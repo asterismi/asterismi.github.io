@@ -189,6 +189,9 @@ a:visited {
     .marker {
         font-size: 12px;
     }
+    .text {
+        padding-bottom: 48px;
+    }
     .text p {
         line-height: 24px;
         padding-bottom: 6px;
