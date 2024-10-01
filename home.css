@@ -515,6 +515,12 @@ body {
     .star-tag {
         font-size: 14px;
     }
+    .project-img {
+        width: 80%;
+    }
+    .project-title {
+        font-size: 10vh;
+    }
     .filter-box {
         width: 100vw;
         top: auto;
