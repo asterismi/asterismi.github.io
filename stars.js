@@ -68,7 +68,7 @@ let starsInfo = [
     },
     {   title: "Calligraphy", type: "✹",
         link: "project.html?pr=10",
-        x: 85, y: 35,
+        x: 80, y: 35,
         color: "#6e1c11", image: "media/10-calligrafia/10-calligrafia-00.webp",
         tags: ["typography", "illustration"]
     },
@@ -190,11 +190,10 @@ let stars = document.querySelectorAll(".star");
 //  generate timeline  |
 //---------------------|
 
-document.querySelector(".info-timeline").style.setProperty("grid-template-rows", `repeat(${timelineInfo.length},1fr)`);
-
 timelineInfo.forEach(timelineData => {
     let timeRow = document.createElement("div");
     timeRow.classList.add("time-row");
+    timeRow.style.height = `${100 / timelineInfo.length}%`
 
     let timeDate = document.createElement("div");
     timeDate.classList.add("time-date");
@@ -224,6 +223,7 @@ timelineInfo.forEach(timelineData => {
     timeRow.appendChild(timeTag);
     document.querySelector(".info-timeline").appendChild(timeRow);
 });
+
 
 //------------|
 //  cursor    |
@@ -374,5 +374,5 @@ infoOpener.addEventListener("click", () => {
         document.querySelector(".info-container").style.setProperty("display", "none");
         document.querySelector(".info-container").classList.add("info-hidden");
         // document.querySelector(".menu-bar").classList.remove("menu-bar-white");
-    };    
+    };
 });
