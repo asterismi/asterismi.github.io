@@ -364,15 +364,15 @@ infoOpener.addEventListener("click", () => {
         document.querySelector(".info-backdrop").classList.add("info-backdrop-open");
         document.querySelector(".menu-bar").classList.add("white");
         cursorArea.style.setProperty("border", "1px solid var(--bg-color)");
-        document.querySelector(".info-container").style.setProperty("display", "grid");
+        document.querySelector(".info-overflow-box").style.setProperty("display", "grid");
         setTimeout(function(){
-            document.querySelector(".info-container").classList.remove("info-hidden");
+            document.querySelector(".info-overflow-box").classList.remove("info-hidden");
         }, 200);
     } else {
         infoOpen = false;
         document.querySelector(".info-backdrop").classList.remove("info-backdrop-open");
-        document.querySelector(".info-container").style.setProperty("display", "none");
-        document.querySelector(".info-container").classList.add("info-hidden");
+        document.querySelector(".info-overflow-box").style.setProperty("display", "none");
+        document.querySelector(".info-overflow-box").classList.add("info-hidden");
         // document.querySelector(".menu-bar").classList.remove("menu-bar-white");
     };
 });
