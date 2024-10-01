@@ -21,8 +21,8 @@
     cursor: none;
 }
 body {
-    width: 100svw;
-    height: 100svh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     color: var(--color);
     background-color: var(--bg-color);
@@ -149,11 +149,18 @@ body {
     top: 0;
     transform: skewY(0deg);
 }
+.info-overflow-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
 .info-container {
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 5;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -161,8 +168,6 @@ body {
                          'copyright copyright copyright info info info info timeline timeline timeline timeline timeline';
     padding: 84px 24px 0 24px;
     color: var(--bg-color);    
-    opacity: 1;
-    transition: opacity 0.2s ease-in;
 }
 .info-container a {
     color: var(--bg-color);
