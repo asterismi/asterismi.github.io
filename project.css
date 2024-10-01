@@ -2,7 +2,10 @@
 
 @font-face {
     font-family: "Chaumont Script";
-    src: local("Chaumont Script") url("ChaumontScript-Regular.woff2") format("woff2")
+    src: local("Chaumont Script"),
+        url("ChaumontScript-Regular.woff2") format("woff2"),
+        url("ChaumontScript-Regular.woff") format("woff"),
+        url("ChaumontScript-Regular.ttf") format("truetype");
 }
 :root {
     --color: #fff;
@@ -18,10 +21,10 @@
     cursor: crosshair;
 }
 body {
-    overflow: hidden;
-    background-color: var(--bg-color);
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-color);
     color: var(--color);
 }
 a {
@@ -39,29 +42,27 @@ a:visited {
 /* BACKGROUND */
 
 .grid {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
     background-image:
       repeating-linear-gradient(var(--color) 0 1px, transparent 1px 100%),
       repeating-linear-gradient(90deg, var(--color) 0 1px, transparent 1px 100%);
     background-size: 120px 120px;
     opacity: 0.3;
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
 }
 
 /* MENU */
 
 .menu-bar {
+    width: 100%;
     position: fixed;
     z-index: 3;
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
     padding: 24px;
     color: var(--color);
-    fill: var(--color);
     transition: 0.2s ease;
     user-select: none;
 }
@@ -74,54 +75,31 @@ a:visited {
 .menu-bar svg:hover {
     transform: rotate(60deg);
 }
-.menu-left {
+.logo, .logo > a {
     display: flex;
+    align-items: center;
 }
 .logo {
-    display: flex;
-    align-items: center;
     padding-right: 24px;
-}
-.logo a {
-    display: flex;
-    align-items: center;
 }
 
 /* MAIN CONTENT */
 
 .main-content {
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-areas: 'text text text gallery gallery gallery gallery gallery';
 }
 .main-text {
     grid-area: text;
-    padding: 120px 12px 48px 48px;
-}
-.main-gallery {
-    grid-area: gallery;
-    padding: 0 48px 0 12px;
-    display: flex;
-    height: 100vh;
-}
-.gallery-container {
-    overflow: hidden;
     width: 100%;
     height: 100%;
-}
-.gallery {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
-.gallery img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-    padding: 6px 0;
-    margin: 6px;
+    padding: 120px 12px 48px 48px;
 }
 .project-info {
     padding-bottom: 36px;
@@ -136,16 +114,46 @@ a:visited {
     padding-bottom: 12px;
 }
 .project-text {
+    width: 100%;
+    height: 100%;
     overflow: auto;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.project-text p {
+.text {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.text p {
     line-height: 30px;
     padding-bottom: 12px;
 }
 .info.link {
     display: flex;
     flex-direction: column;
+}
+.main-gallery {
+    grid-area: gallery;
+    height: 100vh;
+    display: flex;
+    padding: 0 48px 0 12px;
+}
+.gallery {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;    
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 6px;
+    padding: 6px 0;
 }
 .main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar {
     display: none;
@@ -163,42 +171,41 @@ a:visited {
     .grid {
         background-size: 60px 60px;
     }
+    .menu-bar {
+        justify-content: space-between;
+    }
     .main-content {
-        overflow: hidden;
         grid-template-areas: 'gallery gallery gallery gallery gallery gallery gallery gallery' 'text text text text text text text text';
-        padding-top: 72px;
+        padding-top: 60px;
+    }
+    .project-info {
+        padding-bottom: 12px;
     }
     .main-text {
-        height: 100vh;
-        overflow: auto;
         padding: 12px;
     }
+    .marker {
+        font-size: 12px;
+    }
+    .text p {
+        line-height: 24px;
+        padding-bottom: 6px;
+    }
     .main-gallery {
-        overflow: auto;
         height: auto;
         display: flex;
         flex-direction: row;
         padding: 0;
     }
     .gallery {
-        overflow: auto;
         height: auto;
+        overflow: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
     }
     .gallery img {
-        height: 25vh;
+        height: 33vh;
         width: auto;
-    }
-    .marker {
-        font-size: 12px;
-    }
-    .project-text {
-        overflow: auto;
-    }
-    .project-text p {
-        line-height: 24px;
-        padding-bottom: 6px;
     }
 }
