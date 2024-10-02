@@ -156,10 +156,10 @@ a:visited {
     margin: 6px;
     padding: 6px 0;
 }
-.main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar {
+.main-text::-webkit-scrollbar,  .main-gallery::-webkit-scrollbar, .gallery::-webkit-scrollbar {
     display: none;
 }
-.main-text, .main-gallery {
+.main-text, .main-gallery, .gallery {
     scrollbar-width: none;
 }
 
