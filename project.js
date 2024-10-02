@@ -33,8 +33,8 @@ let stars = [
     },
     {   title: "Type Safari: Life After Death", pr: "06",
         color: "#bf3b63", 
-        year: "2021", commissioner: "COURSE + LECTURER", client: "Typographic Design @ Politecnico di Milano, Andrea Braccaloni", team: "", link: '',
-        description: ``,
+        year: "2021", commissioner: "COURSE + LECTURER", client: "Typographic Design @ Politecnico di Milano, Andrea Braccaloni", team: "Adrien Civettini, Sara Gussoni", link: '',
+        description: `<p>A virtual tour through space and time: old hand-painted storefronts and ads facing destined death re-emerge in this collection as a sort of travel-analytical diary.</p><p>Ghost signs, a fascinating phenomenon in itself, find in Google Street View an unexpected ally: sequential snapshots of the same location both preserve the memory and capture the decay – and sometimes demolition – of these precious examples of vernacular typography.</p><p>The project was designed with risograph printing as reference, as both its anachronistic status and its irregular, "glitchy" output match the ephemeral nature of ghost signs.</p>`,
         gallery: ["media/06-tssv/06-tssv-01.webp", "media/06-tssv/06-tssv-02.webp", "media/06-tssv/06-tssv-03.webp", "media/06-tssv/06-tssv-04.webp", "media/06-tssv/06-tssv-05.webp", ]
     },
     {   title: "Illustrating Tolkien", pr: "07",
