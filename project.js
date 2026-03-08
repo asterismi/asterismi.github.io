@@ -21,7 +21,7 @@ let stars = [
     },
     {   title: "Freyə Beauty", pr: "04",
         color: "#9292a6", 
-        year: "2022", commissioner: "COURSE + LECTURER", client: "BA Thesis @ Politecnico di Milano, Francesco Ermanno Guida", team: "Mara Castiglioni, Sara Gussoni, Patricia Teixeira, Gianluca Zoni", link: '<a href="http://fattididati.labsintesi-c1.info/projects/09FREYA.html" target="_blank"> FATTI DI DATI &ndash; Lab Sintesi C1 2022</a>',
+        year: "2022", commissioner: "COURSE + LECTURER", client: "BA Thesis @ Politecnico di Milano, Francesco Ermanno Guida", team: "Mara Castiglioni, Sara Gussoni, Patricia Teixeira, Gianluca Zoni", link: '<a href="https://re.public.polimi.it/handle/11311/1233309" target="_blank"> FATTI DI DATI &ndash; Lab Sintesi C1 2022</a>',
         description: '<p>A speculative design project centered on data collection and the increasing impact of the beauty industry on everyday life.</p> <p>Imagining a future that sees beauty trends changing daily and cosmetic surgery available in the form of over-the-counter medication and kits, we developed the fictional trend-setting brand <i>Freyə Beauty</i> and its flagship product, the smart mirror <i>Gləre</i>.</p> <p>Through the mirror, users learn about the "face of today" displayed with the assistance of AR filters, and their adherence to the cosmetic parameters is measured via AI-powered facial recognition and ranked on a dedicating web platform, creating a conflicting sense of belonging and competition in the community.</p>',
         gallery: ["media/04-freya/04-freya-14.webp", "media/04-freya/04-freya-11.webp", "media/04-freya/04-freya-12.webp", "media/04-freya/04-freya-13.webp", "media/04-freya/04-freya-09.webp", "media/04-freya/04-freya-07.webp", "media/04-freya/04-freya-08.webp", "media/04-freya/04-freya-10.webp", "media/04-freya/04-freya-06.webp", "media/04-freya/04-freya-01.webp", "media/04-freya/04-freya-02.webp", "media/04-freya/04-freya-03.webp", "media/04-freya/04-freya-04.webp", "media/04-freya/04-freya-05.webp",]
     },
@@ -153,6 +153,7 @@ for (let i = 0; i < currProj.gallery.length; i++) {
     image.src = currProj.gallery[i];
     document.querySelector(".gallery").appendChild(image);
 };
+
 
 
 
