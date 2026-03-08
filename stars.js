@@ -69,7 +69,7 @@ let starsInfo = [
     {   title: "Verso Altrove", type: "✧",
         link: "project.html?pr=12",
         x: 68, y: 45,
-        color: "#2275ea", image: "media/12-verso_altrove/12-verso_altrove-00.webp",
+        color: "#4475b9", image: "media/12-verso_altrove/12-verso_altrove-00.webp",
         tags: ["editorial", "game", "illustration"]
     },
     {   title: "Calligraphy", type: "✹",
@@ -390,5 +390,6 @@ infoOpener.addEventListener("click", () => {
         // document.querySelector(".menu-bar").classList.remove("menu-bar-white");
     };
 });
+
 
 
