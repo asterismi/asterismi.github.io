@@ -3,19 +3,19 @@ let text = document.querySelector("h1");
 let stars = [
     {   title: "Schweizer Schule", pr: "01",
         color: "#aa0000", 
-        year: "2023&ndash;24", commissioner: "CLIENT/S", client: "Scuola Svizzera Bergamo, Scuola Svizzera Roma", team: "", link: "",
+        year: "2023&ndash;25", commissioner: "CLIENT/S", client: "Scuola Svizzera Bergamo, Scuola Svizzera Roma", team: "", link: "",
         description: '<p>Inspired by pre-existing murals, the project resulted in the creation of a design system for Scuola Svizzera Bergamo and its application to documents, wayfinding and information plaques. </p> <p>The project found further development in 2024, with the design and illustration of the school diary for Scuola Svizzera Bergamo and Scuola Svizzera Roma; the illustrations pay homage to traditional Swiss papercraft, Scherenschnitte. </p> <br><br>',
         gallery: ["media/01-ssbg/01-ssbg-10.webp", "media/01-ssbg/01-ssbg-07.webp", "media/01-ssbg/01-ssbg-08.webp", "media/01-ssbg/01-ssbg-09.webp", "media/01-ssbg/01-ssbg-02.webp", "media/01-ssbg/01-ssbg-01.webp", "media/01-ssbg/01-ssbg-03.webp", "media/01-ssbg/01-ssbg-04.webp", "media/01-ssbg/01-ssbg-05.webp", "media/01-ssbg/01-ssbg-06.webp", "media/01-ssbg/01-ssbg-11.gif"]
     },
     {   title: "Le Vie del Sacro", pr: "02",
         color: "#60227c", type: "editorial",
-        year: "2023&ndash;24", commissioner: "CLIENT/S", client: "Fondazione Adriano Bernareggi", team: "", link: '<a href="https://www.leviedelsacro.com/" target="_blank">Website</a> <a href="https://www.instagram.com/fab_fondazionebernareggi/" target="_blank">Instagram</a>',
+        year: "2023&ndash;26", commissioner: "CLIENT/S", client: "Fondazione Adriano Bernareggi", team: "", link: '<a href="https://www.leviedelsacro.com/" target="_blank">Website</a> <a href="https://www.instagram.com/fab_fondazionebernareggi/" target="_blank">Instagram</a>',
         description: '<p>Redevelopment and application of the existing graphic identity for <i>Le Vie del Sacro</i>, a cultural project developed by Fondazione Adriano Bernareggi in the context of Bergamo Brescia Capitale della Cultura 2023.</p> <p>The project oversaw the creation of digital and print material for more than 500 events &ndash; including three major exhibits (<i>Sulle Vie di Carlo Ceresa, La terra è di chi la coltiva, Come luce nelle tenebre</i>), two maps, eight monthly event calendars, and an end-of-year report. The project and collaboration were renewed for 2024. </p>',
         gallery: ["media/02-lvds/02-lvds-12.webp", "media/02-lvds/02-lvds-06.webp", "media/02-lvds/02-lvds-07.webp", "media/02-lvds/02-lvds-10.webp", "media/02-lvds/02-lvds-01.webp", "media/02-lvds/02-lvds-01.gif", "media/02-lvds/02-lvds-02.webp", "media/02-lvds/02-lvds-03.webp", "media/02-lvds/02-lvds-04.webp", "media/02-lvds/02-lvds-05.webp", "media/02-lvds/02-lvds-11.webp", "media/02-lvds/02-lvds-13.webp", ]
     },
     {   title: "Destinazione Museo", pr: "03",
         color: "#aa8800", 
-        year: "2023&ndash;24", commissioner: "CLIENT/S", client: "Fondazione Adriano Bernareggi", team: "", link: '<a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/destinazione-museo-7022" target="_blank"> Destinazione Museo 2023 </a> <a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/pace-a-voi-7250" target="_blank"> Pace a Voi! </a> <a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/eccellenti-in-val-brembana-7413" target="_blank"> Eccellenti in Val Brembana </a>',
+        year: "2023&ndash;25", commissioner: "CLIENT/S", client: "Fondazione Adriano Bernareggi", team: "", link: '<a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/destinazione-museo-7022" target="_blank"> Destinazione Museo 2023 </a> <a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/pace-a-voi-7250" target="_blank"> Pace a Voi! </a> <a href="https://www.fondazionebernareggi.it/it/cultura/iniziative/eccellenti-in-val-brembana-7413" target="_blank"> Eccellenti in Val Brembana </a>',
         description: '<p>Development and application of a design system for <i>Destinazione Museo</i>, a cycle of art exhibits anticipating and accompanying the future reopening of Museo Adriano Bernareggi.</p> <p>The first three exhibits (<i>Verso il Rinascimento, Lorenzo Lotto. Un originale e due copie, Artisti. Amici. Superstar.</i>) were developed in sync during summer 2023; a fourth event (<i>Pace a Voi!</i>) was added in April 2024 and a fifth event (<i>Eccellenti in Val Brembana</i>) is currently in development for October 2024.</p>',
         gallery: ["media/03-dest_museo/03-dest_museo-01.webp", "media/03-dest_museo/03-dest_museo-02.webp", "media/03-dest_museo/03-dest_museo-03.webp", "media/03-dest_museo/03-dest_museo-04.webp", "media/03-dest_museo/03-dest_museo-08.webp", "media/03-dest_museo/03-dest_museo-09.webp", "media/03-dest_museo/03-dest_museo-10.webp", "media/03-dest_museo/03-dest_museo-05.webp", "media/03-dest_museo/03-dest_museo-11.webp", "media/03-dest_museo/03-dest_museo-12.webp", "media/03-dest_museo/03-dest_museo-07.webp", "media/03-dest_museo/03-dest_museo-06.webp"]
     },
@@ -77,7 +77,7 @@ let stars = [
     {   title: "Verso Altrove", pr: "12",
         color: "#2275ea", 
         year: "2025", commissioner: "COURSE + LECTURER", client: "MA Thesis @ ISIA Urbino, Anselmo Roveda", team: "", link: '',
-        description: `<p>A traveling tabletop role-playing game, <i>Verso Altrove</i> centers the experience of collaborative storytelling through the lens of shared worldbuilding.</p> <p>The project focuses on TTRPG as a creative medium and explores the intersection of several areas of design – editorial, illustration, bookbinding, information design, calligraphy and type design, screenwriting and, last but naturally not least, game design.</p>`,
+        description: `<p>A traveling tabletop role-playing game, <i>Verso Altrove</i> centers the experience of collaborative storytelling through the lens of shared worldbuilding.</p> <p>The project focuses on TTRPG as a creative medium and explores the intersection of several areas of design &ndash; editorial, illustration, bookbinding, information design, calligraphy and type design, screenwriting and, last but naturally not least, game design.</p>`,
         gallery: ["media/12-verso_altrove/12-verso_altrove-01.webp", "media/12-verso_altrove/12-verso_altrove-02.webp", "media/12-verso_altrove/12-verso_altrove-03.webp", "media/12-verso_altrove/12-verso_altrove-04.webp", "media/12-verso_altrove/12-verso_altrove-05.webp", "media/12-verso_altrove/12-verso_altrove-06.webp", "media/12-verso_altrove/12-verso_altrove-07.webp", "media/12-verso_altrove/12-verso_altrove-08.webp", "media/12-verso_altrove/12-verso_altrove-09.webp", "media/12-verso_altrove/12-verso_altrove-10.webp", "media/12-verso_altrove/12-verso_altrove-11.webp", "media/12-verso_altrove/12-verso_altrove-12.webp"]
     },
 ];
@@ -153,5 +153,6 @@ for (let i = 0; i < currProj.gallery.length; i++) {
     image.src = currProj.gallery[i];
     document.querySelector(".gallery").appendChild(image);
 };
+
 
 
