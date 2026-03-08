@@ -75,7 +75,7 @@ let stars = [
         gallery: ["media/11-maps/11-maps-01.webp", "media/11-maps/11-maps-02.webp", "media/11-maps/11-maps-03.webp", "media/11-maps/11-maps-04.webp", "media/11-maps/11-maps-05.webp", "media/11-maps/11-maps-06.webp", ]
     },
     {   title: "Verso Altrove", pr: "12",
-        color: "#00aaaa", 
+        color: "#2275ea", 
         year: "2025", commissioner: "COURSE + LECTURER", client: "MA Thesis @ ISIA Urbino, Anselmo Roveda", team: "", link: '',
         description: `<p>A traveling tabletop role-playing game, <i>Verso Altrove</i> centers the experience of collaborative storytelling through the lens of shared worldbuilding.</p> <p>The project focuses on TTRPG as a creative medium and explores the intersection of several areas of design – editorial, illustration, bookbinding, information design, calligraphy and type design, screenwriting and, last but naturally not least, game design.</p>`,
         gallery: ["media/12-verso_altrove/12-verso_altrove-01.webp", "media/12-verso_altrove/12-verso_altrove-02.webp", "media/12-verso_altrove/12-verso_altrove-03.webp", "media/12-verso_altrove/12-verso_altrove-04.webp", "media/12-verso_altrove/12-verso_altrove-05.webp", "media/12-verso_altrove/12-verso_altrove-06.webp", "media/12-verso_altrove/12-verso_altrove-07.webp", "media/12-verso_altrove/12-verso_altrove-08.webp", "media/12-verso_altrove/12-verso_altrove-09.webp", "media/12-verso_altrove/12-verso_altrove-10.webp", "media/12-verso_altrove/12-verso_altrove-11.webp", "media/12-verso_altrove/12-verso_altrove-12.webp"]
@@ -153,4 +153,5 @@ for (let i = 0; i < currProj.gallery.length; i++) {
     image.src = currProj.gallery[i];
     document.querySelector(".gallery").appendChild(image);
 };
+
 
