@@ -81,11 +81,15 @@ let starsInfo = [
 ];
 
 let timelineInfo = [
-    {   date: "2024", dot: "big", 
+    {   date: "2026", dot: "big", 
         tag: `today! (${date.toDateString()})`,
         link: " "
     },
-    {   date: " ", dot: "small", 
+    {   date: "2025", dot: "big", 
+        tag: "MA Illustrazione per l'Editoria @ ISIA Urbino",
+        link: " "
+    },
+    {   date: "2024", dot: "small", 
         tag: "Illustrating Tolkien",
         link: "project.html?pr=07"
     },
@@ -376,3 +380,4 @@ infoOpener.addEventListener("click", () => {
         // document.querySelector(".menu-bar").classList.remove("menu-bar-white");
     };
 });
+
