@@ -66,6 +66,12 @@ let starsInfo = [
         color: "#00aaaa", image: "media/08-profeta/08-profeta-00.webp",
         tags: ["illustration"]
     },
+    {   title: "Verso Altrove", type: "✧",
+        link: "project.html?pr=12",
+        x: 68, y: 45,
+        color: "#2275ea", image: "media/12-verso_altrove/12-verso_altrove-00.webp",
+        tags: ["editorial", "game", "illustration"]
+    },
     {   title: "Calligraphy", type: "✹",
         link: "project.html?pr=10",
         x: 80, y: 35,
@@ -88,6 +94,10 @@ let timelineInfo = [
     {   date: "2025", dot: "big", 
         tag: "MA Illustrazione per l'Editoria @ ISIA Urbino",
         link: " "
+    },
+    {   date: " ", dot: "small", 
+        tag: "Verso Altrove",
+        link: "project.html?pr=12"
     },
     {   date: "2024", dot: "small", 
         tag: "Illustrating Tolkien",
@@ -380,4 +390,5 @@ infoOpener.addEventListener("click", () => {
         // document.querySelector(".menu-bar").classList.remove("menu-bar-white");
     };
 });
+
 
